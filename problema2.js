@@ -12,9 +12,9 @@
 
 function fibonacci(numero)
     {
-        let numeros=[0,1];
-        for (let i = 2; i < numero; i++) {
-            numeros[i] = numeros[i - 2] + numeros[i - 1];
+        let fibo=[0,1];
+        for (let i = 2; i <= 19; i++) {
+            fibo.push(fibo[i - 2] + fibo[i - 1]);
         }
-        return numeros;
+        return fibo;
     }
