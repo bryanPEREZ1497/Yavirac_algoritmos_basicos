@@ -1,0 +1,9 @@
+suma=0;
+contador=0;
+for(i=0;i<=8;i=i+2){
+    suma=suma+i;   
+    contador++
+}
+alert(contador);
+alert(suma);
+alert(i);
