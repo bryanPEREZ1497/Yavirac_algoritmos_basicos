@@ -10,9 +10,14 @@
 
 }*/
 <<<<<<< HEAD
+<<<<<<< HEAD
 //descripcion
 //el programa muestra los 20 primeros numeros de la serie de fibonacci,
-function fibonacci(numero)
+function fibonacci()
+=======
+
+function fibonacci()
+>>>>>>> cabecera
 =======
 
 function fibonacci()
@@ -23,7 +28,12 @@ function fibonacci()
             fibo.push(fibo[i - 2] + fibo[i - 1]);
         }
 <<<<<<< HEAD
-        return numros;
+<<<<<<< HEAD
+        return fibo;
+=======
+        return fibo;
+    
+>>>>>>> cabecera
 =======
         return fibo;
     
