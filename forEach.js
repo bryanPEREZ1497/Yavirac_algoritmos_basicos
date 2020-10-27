@@ -6,4 +6,6 @@ array1.forEach((element, index) => {
 `)
 });
 
+const hola = 'hola'; 
+const hola1 = 'hola'
 
