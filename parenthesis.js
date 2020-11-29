@@ -1,14 +1,16 @@
-const input = '(({}))';
+const input = '';
 //output: true
-const input1= '({)}';
+const input1 = '(((((((((((((((((([[[[[[[{{{{{{{{}}}}}}}}]]]]]]]))))))))))))))))))(((((((((((((((((([[[[[[[{{{{{{{{}}}}}}}}]]]]]]]))))))))))))))))))';
 //output false
 const isOpen = character => {
   return ['(', '{', '['].includes(character);
 }
+
 const match = (top, character) => {
   const pairs = { '(': ')', '[': ']', '{': '}' };
   return pairs[top] === character;
 }
+
 const validate = parenthesis => {
   const stack = [];
   for (character of parenthesis) {
@@ -17,11 +19,12 @@ const validate = parenthesis => {
     } else {
       const top = stack.pop();
       if (!match(top, character)) {
-        return false;
+        return `Invalid Parenthesis: ${parenthesis}`;
       }
     }
   }
-  return true;
+  return `OK: ${parenthesis}`;
 }
+
 console.log(validate(input));
-console.log(validate(input1))
+console.log(validate(input1));

@@ -2,7 +2,7 @@
 //output: hola 2, gente 1
 
 const array = ['yo','voz','tu','ya'];
-
+const names = ['','bryan','bryan','andres','andres','enric','enric','pablo','pablo','bryan','bryan','andres','andres','enric','enric','pablo','pablo'];
 const countWords = words => {
   let listWords = {};
   for (word of words) {
@@ -15,7 +15,7 @@ const countWords = words => {
   return listWords;
 }
 
-const list = countWords(array);
+const list = countWords(names);
 console.log(list);
 
 /*obj = {
